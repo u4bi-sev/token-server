@@ -1,5 +1,11 @@
 service: token-server
 
+plugins:
+  - serverless-webpack
+
+custom:
+  webpackIncludeModules: true
+
 provider:
   name: aws
   runtime: nodejs8.10
