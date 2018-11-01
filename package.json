@@ -6,7 +6,8 @@
   "scripts": {
     "start:local": "serverless offline start",
     "deploy": "serverless deploy -v",
-    "remove": "serverless remove"
+    "remove": "serverless remove",
+    "test": "ava --verbose"
   },
   "keywords": [],
   "author": "",
