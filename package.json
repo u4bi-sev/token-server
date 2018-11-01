@@ -9,7 +9,7 @@
     ]
 	},
   "scripts": {
-    "start:local": "serverless offline start",
+    "start": "serverless offline start",
     "deploy": "serverless deploy -v",
     "remove": "serverless remove",
     "test": "ava --verbose"
