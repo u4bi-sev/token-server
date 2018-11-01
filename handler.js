@@ -1,10 +1,6 @@
-export const hello = async (event, context) => {
+import awsServerlessExpress from 'aws-serverless-express'
+import app from './src/server'
 
-    return {
-        statusCode: 200,
-        body: JSON.stringify({
-            message: 'test'
-        })
-    }
+const server = awsServerlessExpress.createServer(app)
 
-}
+export const hello = (event, context) => awsServerlessExpress.proxy(server, event, context)
