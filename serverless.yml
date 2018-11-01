@@ -2,6 +2,7 @@ service: token-server
 
 plugins:
   - serverless-webpack
+  - serverless-offline
 
 custom:
   webpackIncludeModules: true
@@ -13,3 +14,7 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          method: get
+          path: /
