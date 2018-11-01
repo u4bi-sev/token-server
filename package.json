@@ -12,7 +12,8 @@
   "dependencies": {
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0"
   },
   "devDependencies": {
     "serverless-offline": "^3.31.0",
