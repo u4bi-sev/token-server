@@ -4,7 +4,9 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "start:local": "serverless offline start"
+    "start:local": "serverless offline start",
+    "deploy": "serverless deploy -v",
+    "remove": "serverless remove"
   },
   "keywords": [],
   "author": "",
