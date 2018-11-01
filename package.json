@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
+  "ava": {
+		"require": [
+      "esm"
+    ]
+	},
   "scripts": {
     "start:local": "serverless offline start",
     "deploy": "serverless deploy -v",
@@ -20,6 +25,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "esm": "^3.0.84",
     "serverless-offline": "^3.31.0",
     "serverless-webpack": "^5.2.0",
     "supertest": "^3.3.0",
